@@ -1,0 +1,108 @@
+O QUE É UMA CLASSE?
+
+Imaginando uma confeitaria, o formato idêntico dos biscoitos é garantido usando a mesma
+fôrma em todos os produtos. Por analogia, em POO, CLASSES são a fôrma que homogeniza
+um formato a ser seguido sempre que eu precisar fazer objetos ou do mesmo tipo, ou com
+as mesmas características, ou com os mesmos comportamentos.
+
+Ter a classe não implica necessariamente ter o objeto. Ter a fôrma do biscoito não
+é o mesmo que ter o biscoito, é apenas ter a possibilidade de produzir biscoitos de
+acordo com um formato pré-definido.
+
+Do mesmo modo, a planta baixa de uma casa ainda não é a casa, mas sim uma possibilidade,
+um conjunto de regras que orientará a construção da casa.
+
+Em POO, ao criar uma classe, tenho que informar 3 coisas: o NOME da classe, os ATRIBUTOS
+da classe (características dos objetos da classe), e os MÉTODOS da classe (ações que o
+objeto pode executar, ou que podem ser executadas através dele).
+
+DIAGRAMA DE CLASSES
+
+----------------------------------
+|           NomeClasse           |    BiscoitoCoracao
+----------------------------------
+| + Atributo 1                   |    tamanho     cozido
+| + Atributo 2                   |    massa       temperatura
+| + Atributo 3                   |    peso
+| + Atributo n                   |    cobertura
+----------------------------------
+| + Métodos 1()                  |    cozinhar()  podeComer()
+| + Métodos 2()                  |    congelar()  comer()
+| + Métodos 3()                  |    cobrir()
+| + Métodos n()                  |    confeitar()
+----------------------------------
+
+
+
+QUANDO ACONTECE UM INSTANCIAMENTO
+
+No exemplo do biscoito, assim que a forma é pressionada sobre uma base de massa, o
+processo de instanciamento do biscoito se inicia. No exemplo da planta baixa, assim
+que os pedreiros começam a assentar os primeiros tijolos, se inicia o processo de
+instanciamento da casa.
+
+INSTANCIAR, portanto, é seguir o padrão que foi definido na classe, para a criação
+de um objeto; instanciamento é o momento em que a classe gera um objeto, sempre no
+mesmo formato, sempre no mesmo padrão, de acordo com os atributos e métodos definidos
+na classe.
+
+
+
+O QUE É UM OBJETO?
+
+Genericamente, é uma coisa material ou abstrata feita a partir de um modelo, que pode
+ser descrita por meio de suas características, comportamentos e estado atual.
+
+Em POO, substituímos modelo por classe, características por atributos, e comportamentos
+por métodos:
+
+OBJETO é algo concreto ou abstrato feito a partir de classes, que pode ser
+descrito por meio de seus atributos, métodos e estado atual.
+
+OBJETO é a instância de uma classe.
+
+
+
+
+COMO DEFINIR O ESTADO DE UM OBJETO?
+
+O estado de um objeto é o conjunto atual de todos os seus atributos. No exemplo do
+biscoito:
+
+----------------------------------
+|        BiscoitoCoracao         |
+----------------------------------
+| + tamanho = 8.2cm              |
+| + massa = baunilha             |
+| + peso = 54.3g                 |  >>> ESTADO DO BISCOITO NESSE EXATO MOMENTO
+| + cobertura = pistache         |  >>> O ESTADO de um objeto pode variar:
+| + cozido = True                |  >>> Se for mordido, vai pesar menos...
+| + temperatura = 55oC           |  >>> Com o passar do tempo, esfria...
+----------------------------------
+| + Métodos 1()                  |
+| + Métodos 2()                  |
+| + Métodos 3()                  |
+| + Métodos n()                  |
+----------------------------------
+
+
+EXEMPLOS DE OBJETOS ABSTRATOS
+
+Consulta médica: atributos (endereço, médico, horários, já aconteceu ou vai acontecer,
+medicamentos receitados); métodos (iniciar, terminar, cancelar, adiar)
+
+Processo de venda: atributos (valor, produto); métodos (iniciar, receber pagamento,
+devolução)
+
+Compromisso ou reunião: atributos (horários, participantes); métodos (começou, encerrou,
+resoluções); estado atual (ainda em andamento, quem está falando)
+
+Aula na faculdade
+
+Transação bancária
+
+Reserva de vôo
+
+Erro no sistema: atributos (horário, tipo, código, causas, consequências); métodos
+(disparo do erro, acontecimento do erro, correção do erro); estado atual (não tem
+erro, acabou de acontecer um erro, resolução em andamento)
